@@ -11,13 +11,16 @@ public class Alumno {
      * Crea un alumno nuevo
      */
     public Alumno(String nombreCompleto, String numeroMatriculaAlumno, int edadAlumno) {
-        if (nombreCompleto.length() >= 3) {
-            nombre = nombreCompleto;
+        nombre = nombreCompleto;
+        if (nombreCompleto.length() < 3) {
+            System.out.println ("Error");
         }
         
-        if (numeroMatriculaAlumno.length() >= 4) {
-            numeroMatricula = numeroMatriculaAlumno;
+        numeroMatricula = numeroMatriculaAlumno;
+        if (numeroMatriculaAlumno.length() < 4) {
+            System.out.println ("Error");
         }
+        
         edad = edadAlumno;
     }
 
