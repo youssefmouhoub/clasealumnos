@@ -57,11 +57,11 @@ public class Alumno {
         }
         
         if (nombre.length() < 3 && numeroMatricula.length() > 4) {
-            nombreUsuarioGithub = nombre.substring(0, 3) + numeroMatricula.substring(0, 4) ;
+            nombreUsuarioGithub = nombre + numeroMatricula.substring(0, 4) ;
         }
         
         if (nombre.length() > 3 && numeroMatricula.length() < 4) {
-            nombreUsuarioGithub = nombre.substring(0, 3) + numeroMatricula.substring(0, 4) ;
+            nombreUsuarioGithub = nombre.substring(0 ,3) + numeroMatricula ;
         }
         
         if (nombre.length() < 3 && numeroMatricula.length() < 4) {
